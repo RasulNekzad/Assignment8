@@ -15,7 +15,7 @@ function App() {
   async function fetchGifs() {
     setIsLoading(true);
     console.log("fetching...")
-    const result = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=${apiKey}`);
+    const result = await axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${apiKey}`);
     setGifs(result.data.data);
     setIsTrending(false);
     setIsLoading(false);
@@ -23,7 +23,7 @@ function App() {
 
   function fetchTrendingGifs() {
     setIsLoading(true);
-    const result = axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`)
+    const result = axios.get(`https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`)
     .then((result) => {
       setGifs(result.data.data)
       setIsLoading(false);
