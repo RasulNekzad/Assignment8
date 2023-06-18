@@ -40,4 +40,28 @@
 img {
   width: 500px;
   height: 500px;
+  border-style: inset;
+}
+
+p {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#trending {
+  border-style: solid;
+  border-radius: 100px;
+  background-color: papayawhip;
+  color: maroon;
+}
+
+#search {
+  border-style: solid;
+  border-radius: 100px;
+  background-color: rgba(119, 192, 238, 0.238);
 }
